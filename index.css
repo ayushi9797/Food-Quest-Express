@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-align: center;
+    font-family: "Abel", sans-serif;
+}
+body{
+    text-align: center;
+}
+
+#navbar{
+    width: 100%;
+    background-color: white;
+        border: 1px solid transparent;
+        width: 100%;
+        height: 100px;
+        vertical-align: top;
+        margin-top: 0px;
+      
+
+}
+div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.one{
+    border: 1px solid transparent;
+    height: 50%;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.middle{
+    margin: auto;
+    padding: 18px;
+}
+#slideshow{
+    padding: 7px;
+}
+.bycategories{
+    padding: 7px;
+
+}
+#shopbycategories{
+    padding: 15px;
+    gap: 1px;
+}
+.middle img{
+    border-radius: 20px;
+}
+.diwali img{
+
+    border-radius: 20px;
+}
+#shopbycategories img{
+    border-radius: 20px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+#bottom{
+    margin-top: 1%;
+    font-weight: 650;
+}
+
