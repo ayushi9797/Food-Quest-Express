@@ -1,232 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="navbar" href="">
-</head>
-<body>
-    <header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/b06a377e67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- navbar -->
 
+    <header>
+      <nav id="navbar" class="navbar">
+        <!-- div main -->
+        <div id="main-container">
+          <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="this is my logo" />
+          </a>
+          <span>
+            <a href="cart.html"><span id="shopping-cart" class="shopping-cart"><i
+              class="fas fa-shopping-cart"></i>Add to cart</span></a>
+            </span>
 
-    <nav id="navbar">
-        <div>
-        <a href="index.html"><img width='20%'src="logo.png" alt="my logo"></a>
+            <button class="star"><i class="fa-solid fa-star"></i></button>
 
-                <span class="one"></span>
-                    <a href = "#">Online Slots Availability</a>
+          <!-- div-1 -->
 
-                    <span class="two"></span>
-                    <a href="#">Fresh & Fast</a>
+          <div class="div-1">
+            &nbsp;
+            <a href="#">Online Slots Availability</a>
 
-                    <span class="three"></span>
-                    <a href="#">Store Locator</a>
+            <span class="div-2"> </span>
+            &nbsp;
 
-                    <span class="four"></span>
-                    <a href="#">Contact Us</a>
+            <a href="">Fresh & Fast</a>&nbsp;
+            <span class="div-2"></span>
+            &nbsp;
 
+            <a href="">Store Locator</a>&nbsp;
+            <span class="div-2"></span>
+            &nbsp;
 
-                    <!-- sigin -->
+            <a href="">Contact Us</a>
+            &nbsp;
+            <span class="div-2"></span>
 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
 
+            <a href="login-signup.html"
+              >Login &nbsp; <span class="div-2"></span> &nbsp;Register
+            </a>
+            <br /><br />
 
+            <!-- enter button -->
+            <button id="btn">
+              <i class="fa fa-pencil" aria-hidden="true"></i>Enter Pin
+            </button>
 
-                </header>
+            <!-- select -->
+            <select name="cities" id="cities">
+              <option value="Action 3">Agra</option>
+              <option value="Action 3">Ahmedabad</option>
+              <option value="Action 3">Ahmednagar</option>
+              <option value="Action 3">Aizawl</option>
+              <option value="Action 3">Ajmer</option>
+              <option value="Action 3">Akola</option>
+              <option value="Action 2">Alappuzha</option>
+              <option value="Action 3">Aligarh</option>
+              <option value="Action 3">Allahbad</option>
+              <option value="Action 3">Alwar</option>
+              <option value="Action 3">Amarvati</option>
+              <option value="Action 3">Bahraich</option>
+              <option value="Action 3">Ballia</option>
+              <option value="Action 3">Bathinda</option>
+              <option value="Action 3">Begusarai</option>
+              <option value="Action 3">Belgaum</option>
+              <option value="Action 3">Bellary</option>
+              <option value="Action 3">Berhampore</option>
+              <option value="Action 3">Berhampur</option>
+              <option value="Action 3">Bettiah</option>
+              <option value="Action 3">Dehri</option>
+              <option value="Action 3">Delhi</option>
+              <option value="Action 3">Deoghar</option>
+              <option value="Action 3">Dewas</option>
+              <option value="Action 3">Dhanbad</option>
+              <option value="Action 3">Dharmavaram</option>
+              <option value="Action 3">Dhule</option>
+              <option value="Action 3">Dibrugarh</option>
+              <option value="Action 3">Dindigul</option>
+              <option value="Action 3">Durg</option>
+            </select>
 
-                 <button>
-                    <i class="fa fa-pencil" aria-hidden="true"></i>Enter Pin</button>
-                     <select id="city" name='takeation' style="border-right: none;"> 
-                    
-                    <option value='first'>Agra</option>
-                    <option value='first'>Ahmedabad</option>
-                    <option value='first'>Ahmednagar</option>
-                    <option value='first'>Aizawl</option>
-                    <option value='first'>Ajmer</option>
-                    <option value='first'>Akola</option>
-                    <option value='first'>Alappuzha</option>
-                    <option value='first'>Aligarh</option>
-                    <option value='first'>Allahbad</option> 
-                    <option value='first'>Amarvati</option>                            
-                    <option value='first'> Bahraich </option>
-                    <option value='first '> Bally </option>
-                    <option value='first'>  Bangalore </option>
-                    <option value='first'>Chandigarh </option>
-                    <option value='first'>Chhatisgarh</option>
-                    <option value='first'>Daman & Diu</option>
-                    <option value='first'>Delhi </option>
-                    <option class='first'>New Delhi</option>
-                    <option value='first'>Gujarat</option>
-                    <option value='first'>Haryana</option>
-                    <option class='first'>Himachal Pradeh</option>
-                    <option value='first'>Jammu and Kashmir</option>
-                    <option value='first'>Jharkhand</option>
-                    <option class='first'>Karnataka</option>
-                    <option value='first'>Kerala</option>
-                    <option value='first'>Madhya Pradeh</option>
-                    <option class='first'>Maharastra</option>
-                    <option value='first'>Manipur</option>
-                    <option value='first'>Meghalaya</option>
-                    <option class='first'>Mizoram</option> 
-                    <option value='first'>Nagaland</option>
-                    <option value='first'>Odisha</option>
-                    <option class='first'>Punjab</option>
-                    <option value='first'>Rajasthan</option>
-                    <option value='first'>Sikkim</option>
-                    <option class='first'>Telangana</option>
-                    <option value='first'>UttarPradesh</option>
-                    <option value='first'>West Bengal</option>
-                </select>
-                        <!-- ----------- -->
+            <!-- select end -->
 
+            <!-- dropdownstart -->
+            <div class="dropdown">
+              <input
+                class="search-dropdn"
+                type="text"
+                placeholder="Start Shopping..."
+                list="sl"
+              /><i  style=" padding: 10px;border:1px solid black;color: white;background-color: rgb(57, 220, 57);"class="fa fa-search" aria-hidden="true"></i>
 
-                
-                <ul style="letter-spacing: 1px;" >
-                    <a class="active dropbtn" href="#home" style="border-bottom: transparent 2px solid;" id="shopbycategory">SHOP BY CATEGORY 
-                        </a>
-                    </li>
+              <div class="dropdown-content">
+                <p class="dropdownpara">Trending Searches</p>
+                <p>Organic</p>
+                <p>Fresh Artisinal Breads</p>
+                <p>Cold cuts & Seafood</p>
+                <p>Diabetic Friendly Foods</p>
+                <p>Exclusive</p>
+                <p>Healthy Alternatives</p>
+                <p>Birthdays & Anniversary Gift Hampers</p>
+                <p>Platters & Dips</p>
+                <p>Smoked Cheese</p>
+                <p>Ice creams & Desserts</p>
+                <p>Keto-Paleo</p>
+              </div>
+            </div>
+            <!--span for cart  -->
+
           
-                    <li><a href="#news">PAST PURCHASES</a></li>
-                    <li><a href="#contact">GIFTING</a></li>
-                    <li><a href="#contact">REWARDS</a></li>
-                    <li><a href="#contact">BLOG</a></li>
-                    <li><a href="#contact">OFFERS</a></li>
-                    <li><a href="#contact" style="justify-content: start;">CONNOISSEUR'S SELECTION</a></li>
-                    <li><a href="#contact">BOOK VISIT</a></li>
-                </ul>
+            
 
+            
+              
+        <!-- </div> -->
+        <!-- </div> -->
 
-                <!-- ------- -->
-                
+        <!-- delivary -->
 
-
-                <!-- ------------ -->
-                        <div class="middle">
-                            <img src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=14" alt="">
-                        </div>
-
-                <!-- //slideshow -->
-                <div class="slideshow">
-                    <img  src="basket039.jpg"id="slideimage"alt="food quest basket"/>
-                    </div>
-                        <!-- ////////////// -->
-                          <br>
-                        <div class="diwali">
-                            <div>
-                                <img src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=8" alt="">
-
-
-                            </div>
-                            <div>
-                                <img src="https://www.naturesbasket.co.in/Images/Fruits-Vegetables.png?v=17" alt="">
-                            </div>
-                            <div>
-                                <img src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15" alt="">
-                            </div>
-                        </div>
-
-                        <div class="bycategories">
-                            <h1>Shop By Category</h1>
-                        </div>
-
-                        <div id="shopbycategories">
-                            <div>
-                                <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png" alt="">
-                            </div>
-                            <div>
-                                <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png" alt="">
-                            </div>
-                            <div>
-                                <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png" alt="">
-                            </div>
-                            <div>
-                                <img src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png" alt="">
-                            </div>
-                        </div>
-                        <!-- ---------------->
-                        <!-- <div class="table">
-                        <b>Exotic Vegetables</b>
-                        <table>
-                            <tr>
-                            <td>
-                                Asparagus Artichokes  </i>
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Avocados Peppers
-                            </td>
-                            <td>
-                            </td>
-                            </tr>
-                        <tr>
-                            <td>
-                                Broccoli Zucchini
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                View All
-                            </td>
-                            <td>
-                            </td>
-                        </tr>
-                        </table>
-                        </div>
-                        <! --------- -->
-                        
-                    <!-- </div>
-                         --> 
-
-<!-- ---------------slideshow2--------------- -->
-                         <div class="slideshow">
-                            <img  src="basket044.jpg"id="slideimage-second"alt="food quest basket"/>
-                            </div>
-
-<!-- -------------------- -->
-<div id="addcart">
-    <div>
-
-        <h2>What's Trending</h2>
-    </div>
-    <div class="photos">
-        <div>
-            <img src="" alt="">
-            <h3></h3>
-            <button> </button>
-            <button></button>
+        <div id="mynewmod" class="newmod">
+          <div class="newmod-content">
+            <span class="close">&times;</span>
+            <p>Enter Your Delivery Pincode</p>
+            <input
+              type="number"
+              placeholder="Delivery pincode"
+              id="search-hover"
+             
+            <button>SUBMIT</button>
+            <div class="newmod-content-2">
+              Entering your delivery pincode will allow us to show you the
+              products available in your area and to ensure timely delivery.
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
+
+    <!-- Navbar end -->
+    <div class="middle">
+      
+      <img src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=14"/>
+    
+    </div>
+    
+
+    <!-- imageslider1 -->
+    <div class="slideshow">
+      <img class="slideimg"
+        
+        src="images/basket038.jpg"
+        id="slideimage"
+        alt="food quest basket"
+      />
+    </div>
+    <!-- slideimage1completed -->
+
+    <div class="container">
+      <div class="box">
+        <img
+          src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=8"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <img
+          src="https://www.naturesbasket.co.in/Images/Fruits-Vegetables.png?v=17"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <img
+          src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--  -->
+
+    <div class="bycategories"></div>
+
+    <div class="categories">
+      <span  class="cate">
+        SHOP BY CATEGORY
+      </span>
+    </div>
+
+    <div id="shopbycategories">
+      <div class="cat">
+        <img
+          src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png"
+          alt=""
+        />
+      </div>
+      <div class="cat">
+        <img
+          src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png"
+          alt=""
+        />
+      </div>
+      <div class="cat">
+        <img
+          src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
+          alt=""
+        />
+      </div>
+      <div class="cat">
+        <img
+          src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- slideshow2 -->
+
+    <div class="slideshow">
+      <img src="images/basket044.jpg" id="slideimage-second" alt="food quest basket" />
+    </div>
+
+    <!-- whats trending    -->
+
+
+    <!-- Events -->
+    <div id="events">
+    <span class="events-span">
+        OUR EVENTS
+    </span>
+</div>
+
+<div id="event-img">
+    <div class="eve-img">
+    <img class="eimg"src="https://www.naturesbasket.co.in/Images/PhotoGallery/SanjeevKapoor_at_KolkataGallary.jpg" alt="">
+
+    <img class="eimg" src="images/basket111.jpg" alt="" >
+    <img  class="eimg" src="images/basket112.png" alt="" >
+    </div>
+</div>
+
+<!-- shop by world brands -->
+<div id="shopbrand">
+  <span class="shop-span">
+    SHOP BY WORLD BRANDS
+  </span>
+</div>
+
+<!--  -->
+<div id="shop-img">
+  <div class="shop-img">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/barilla.jpg" alt="">
+  </div>
+
+  <div class="shop-img">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/ceres.jpg" alt="">
+  </div>
+
+
+  <div class="shop-img">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/lindt.jpg" alt="">
+  </div>
+
+
+  <div class="shop-img">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/silk.jpg" alt="">
+  </div>
+
+
+  <div class="shop-img">
+    <img src="https://d1z88p83zuviay.cloudfront.net/Images/davidoff-cafe.jpg" alt="">
+  </div>
+
+
+
+
+
+
+
+</div>
+
+<!-- shop by world brands -->
+
+<!-- online Grocery -->
+<div id="footer">
+  <div class="footerr">
+    <h3>Online Grocery Store India</h3></div>
+  <div class="foot">
+   <p>Nature’s Basket is a grocery store operating in Mumbai, Bangalore and
+    Pune with deliveries to all cities across India including Hyderabad,
+    Delhi, Kolkata, Chennai, Surat and more. We offer a wide range of food
+    products for all your everyday needs and even offer grocery home
+    delivery as well as a grocery shop online for you to purchase from. Our
+    online grocery store has fresh fruits and vegetables, fresh and frozen
+    meats and seafood, a wide range of breads and other packaged bakery
+    products as well as a range of fresh cheeses from around the world. We
+    even have a range of every staple and international cuisine product to
+    meet your needs along with organic products for fresh and packaged food
+    items. With our offerings, we have the best online food shop & online
+    grocery shopping platform available for all your grocery products as
+    well as physical grocery stores in select cities.</p> 
+  </div>
+
+  <div>
+    <div style="margin-top: 1%; font-weight: 700;">
+Online Grocery Supermarket Shopping India
+    </div>
+    <div>
+    With our wide range of groceries available, Nature’s Basket is a large online supermarket and grocery store for all your
+    everyday food needs. We offer you the best quality grocery products which you can buy online and have them delivered to
+    you conveniently. We have our grocery stores in Mumbai, Pune and Bangalore where you can buy groceries and food items.
+    We also have the best online grocery store to shop for fruits and vegetables, meats and seafood, breads and other bakery
+    items as well as cheese and dairy. Order groceries online from the best quality grocery store at best prices.
+
+    </div>
+</div>
+<br>
+
+<div style="color: gray;">
+    Find a variety of Best Christmas gifts such as delightful Cakes, Chocolates, Cookies, Turkey, Stollen, Gourmet Gift
+    Baskets, Sweets & Lots More Here
+
+</div>
+
+<div style="width: 100%; height: 300px; background-color: #FBFBFB; display: inline-flex;">
+    <div style=" height: 90%; width: 17.5%; margin-top: 1%;">
+        <div style = "text-align: center; font-weight: 700;">
+            DOWNLOAD THE APP
+        </div>
+        <div style="margin-left: 21%;">
+            <img src="https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg" width="150" height="75" alt="">
+        </div>
+        <div style="margin-left: 21%;">
+            <img src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg" width="150" height="75" alt="">
+        </div>
+    </div>
+    
+    <div style="height: 90%; width: 52.5%; margin-top: 1%;">
+        <table style="width: 100%;margin-left: 5%;">
+            <tr>
+                <th style="text-align: start;">
+                    ABOUT US
+                </th>
+                <th style="text-align: start;">
+                    NEWS & MEDIA
+                </th>
+                <th style="text-align: start;">
+                    OUR POLICIES
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    About us
+                </td>
+                <td>
+                    Press releases
+                </td>
+                <td>
+                    Privacy policy
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Our Vision & Purpose
+                </td>
+                <td>
+                    Newsletters
+                </td>
+                <td>
+                    Payment policy
+                </td>
+            </tr>
+<tr>
+    <td>
+Quality standards
+    </td>
+    <td>
+        Events
+    </td>
+    <td>
+        Disclaimers
+    </td>
+</tr>
+<tr>
+    <td>
+Awards    </td>
+    <td>
+Photo gallery    </td>
+    <td>
+        Statuatory compliance
+    </td>
+</tr>
+<tr>
+                <td>
+FAQs                </td>
+                <td>
+                    Recipes
+                </td>
+                <td>
+                    Data protection policy
+                </td>
+            </tr>
+            <tr>
+                <td>
+Vendor TV
+                </td>
+                <td>
+NBTV                </td>
+                <td>
+                    Grievance Officer
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     
+                </td>
+                <td>
+                    Our Virtual Store
+                </td>
+                <td>
+                    Information Security Policy
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align: start;">
+                    Careers
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Work with us
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style=" height: 90%; width: 30%; margin-top: 1%;">
+        <form action="">
+            <b>SIGN UP TO STAY UPDATED</b>
+            <div>
+            <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS" style="height: 40px; width: 300px; margin-top: 5%;">
+            </div>
+            <div>
+                <button style="background-color: #84BA3E; color: white;">SUBSCRIBE</button>
+            </div>
+        </form>
     </div>
 
 </div>
+
+<div style="border: 1px solid #E0E0E0; width: 100%; height: 50px; background-color: #FBFBFB; display: inline-flex;">
+    <span style="margin-top: 1%; margin-left: 10%;">Payment Method </span> <img src="https://www.naturesbasket.co.in/Images/icons-card-payments-mode.png" alt="">
+</div>
+
+<div style="border: 1px solid #E0E0E0; width: 100%; height: 50px; background-color: #FBFBFB; display: inline-flex;">
+    <span style="margin-top: 1%; margin-left: 10%;">© 2020 Natures Basket Limited. All rights reserved. | Privacy Policy | Terms of Use | Site Map | Mobile Site | FSSAI License
+    Number - 11519002000496 </span> 
+</div>
+
+<div id="footer-table2">
+  <table class="footer2">
+      <tr>
+          <th >
+              FRESH & FAST
+          </th>
+          <th >
+              INTERNATIONAL CUISINE
+          </th>
+          <th style="text-align: start;color: black;">
+              CONFECTIONARY & PATISSERIE
+          </th>
+          <th  style="text-align: start;color: black;">
+              BREAKFAST & DIARY
+          </th>
+          <th style="text-align: start;color: black;">
+              SNACKS & BEVERAGES
+          </th>
+
+      </tr>
+      <td>
+          
+      </td>
+      <td>
+          Italian & Continential
+      </td>
+      <td>
+          Choclates
+      </td>
+      <td>
+          Cereals bars & others
+      </td>
+      <td>
+          Cookies &crakers
+      </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  -->
+
+
+
+
+
+
+
+
     
-</body>
 
 
+
+
+
+
+
+    <!--  -->
+  </body>
 </html>
-
 <script>
+  // image slider
 
-// --------------------slideshow1---------------------------------
-var images = [
-    "https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=14",
-    "basket038.jpg",
-    "basket040.jpg",
-    "basket047.jpg",
-    "basket046.jpg"
-    
-]
+  var images = [
+    "images/basket039.jpg",
+    "images/basket064.jpg",
+    "images/basket065.jpg",
+    "images/basket063.jpg",
+    "images/basket045.jpg",
+  ];
 
-
-var i = 0;
+  var i = 0;
   function slides() {
     document.getElementById("slideimage").src = images[i];
 
@@ -235,18 +584,17 @@ var i = 0;
   }
   setInterval(slides, 1000);
 
-//   ---------------------slideshow2-----------------------
-var images = [
-    "basket045.jpg",
-    "basket064.jpg",
-    "basket065.jpg",
-    "basket063.jpg",
-    "basket045.jpg"
-    
-]
+  // slideshow2
 
+  var images = [
+    "images/basket045.jpg",
+    "images/basket064.jpg",
+    "images/basket065.jpg",
+    "images/basket063.jpg",
+    "images/basket045.jpg",
+  ];
 
-var i = 0;
+  var i = 0;
   function slides() {
     document.getElementById("slideimage-second").src = images[i];
 
@@ -254,5 +602,24 @@ var i = 0;
     else i = 0;
   }
   setInterval(slides, 1000);
-  
+
+  // 
+
+  var newmod = document.getElementById("mynewmod");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  newmod.style.display = "block";
+}
+
+span.onclick = function() {
+  newmod.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == newmod) {
+    newmod.style.display = "none";
+  }
+}
 </script>
