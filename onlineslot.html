@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online slots Availability</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+    var ayushi=[]
+    var url="https://636a3668b10125b78fd3eda3.mockapi.io/food/groceries/10"
+
+    fetch(url)
+    .then((res)=>res.json())
+    .then((data)=>{
+        ayushi=data
+        console.log(data)
+
+        displayCard(data)
+})
+
+
+function displayCard(data){
+    data.forEach(element => {
+        var div=document.createElement('div')
+
+        var imagePro=document.createElement('img')
+        imagePro.setAttribute('src',element.groceries)
+        
+
+    div.append(imagePro)
+    document.getElementById("container").append(div)
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+

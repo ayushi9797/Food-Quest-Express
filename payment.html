@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment Page</title>
+    <style>
+        h1 {
+            font-size: 2rem;
+        }
+
+        form {
+            background: linear-gradient(45deg, rgb(228, 174, 174), rgb(184, 237, 240),
+                    rgb(247, 168, 168));
+            box-shadow: 2px 2px 8px black;
+            margin: 5em auto;
+            width: 25%;
+            padding: 10px 40px 10px 40px;
+            font-size: 1.3rem;
+        }
+
+        input {
+            margin: 6px auto;
+            width: 80%;
+            display: block;
+            padding: 8px 20px;
+            font-size: 1.3rem;
+        }
+
+        button {
+            margin: 2rem auto;
+            padding: 6px 8px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 1px black;
+            width: 40%;
+            display: block;
+            font-size: 1.5rem;
+            background-color: rgb(107, 234, 234);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/b06a377e67.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+
+    <form style="margin-top:10%" action="#">
+        <h1>Enter Your CARD Details</h1>
+        Card Number <input type="number" name="" id="cardN">
+        Name<input type="text" name="" id="Name">
+        CVV<input type="number" name="" id="CVV">
+        Expirey date<input type="date" name="" id="EDate">
+        <button><a href="../assignment-7/otp.html">Submit</a></button>
+    </form>
+
+
+
+    </body>
+
+
+    </html>
+
+    <script>
+        document.querySelector("button").addEventListener("click", myfun);
+        function myfun() {
+            let storedCnum = 12345
+            let storedCvv = 789;
+    
+            let inputCNum = document.getElementById("cardN").value;
+            let inputCvv = document.getElementById("CVV").value;
+    
+            if (storedCnum == inputCNum && storedCvv == inputCvv) {
+                alert("accepted");
+            }
+            else {
+                alert("wrong input");
+            }
+    
+        }
+    
+    </script>

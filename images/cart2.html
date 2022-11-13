@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="#container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+
+    let ayushi=[];
+    let url="https://636a3668b10125b78fd3eda3.mockapi.io/naturebasket"
+
+    fetch(url)
+    .then((res)=>res.json())
+    .then((data)=>{
+        ayushi=data
+        // console.log(data)
+
+        displayCard(data)
+
+    })
+
+    function displayCard(data){
+        // document.querySelector('#container').innerHTML="";
+        data.forEach( function(element)  {
+            var div=document.createElement('div')
+
+            var imagePro=document.createElement('img')
+            imagePro.setAttribute('src',element.food)
+
+            var juice=document.createElement('h2')
+            juice.innerText=element.juice;
+
+            div.append(imagePro,juice)
+        document.getElementById("#container").append(div)
+
+            
+        });
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
