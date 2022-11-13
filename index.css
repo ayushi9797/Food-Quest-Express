@@ -6,11 +6,13 @@
   scroll-behavior: smooth;
 }
 
+
 /* Header */
 
 #navbar{
   width: 100%;
   background-color: white;
+
 }
 .logo{
   width: 20%;
@@ -303,7 +305,7 @@ align-items: center;
   z-index: 1;
   cursor: pointer; */
 
-}
+
 .box img{
 
   border-radius: 20px;
@@ -452,6 +454,7 @@ align-items: center;
 }
 .foot{
   color: grey;
+  margin-top: 2%;
 }
 /*  */
 
@@ -476,6 +479,90 @@ align-items: center;
   margin-left: 5%;
 
 }
+.h3{
+  margin-top: 3%;
+}
+.trend{
+  width: 50%; 
+  height: 20px;
+   border-bottom: 1px solid rgb(219, 218, 218);
+    text-align: center; 
+    margin: auto;
+     margin-top: 1%
+
+}
+.tre{
+  font-size: 30px;
+   background-color: #FFFFFF;
+    padding: 0 20px;
+
+}
+.trend-ul{
+  letter-spacing: 1px;
+   margin-top: 3%; 
+  background-color: #F3F3F3;
+
+}
+.more{
+  width:300px;
+  height:300px;
+  margin-left: 25%;
+
+}
+.title{
+  text-align: center;
+   color: purple;
+
+}
+.price{
+  text-align: center;
+  color: #D881A9; 
+  font-size: small;
+}
+.btn-danger{
+  padding: 10px;
+  color: white;
+  background-color: red;
+  border-radius: 7px;
+  border-color: white;
+}
+.main-carousel{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+.carousel-cell >img{
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 1rem;
+
+
+}
+.carousel-cell{
+  box-shadow:5px 4px 5px grey ;
+  text-align: center;
+  background-color: rgb(241, 97, 121);
+  color: white;
+  border-radius: 10px;
+
+}
+.carousel-cell:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  cursor: pointer;
+
+}
+
+@media(max-width:700px){
+  .main-carousel{
+    
+    grid-template-columns: repeat(2,1fr);
+
+}
+}
+
+
 
 
 
