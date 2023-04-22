@@ -29,3 +29,18 @@ through physical retail stores, an online portal, and a mobile application.
    -  HTML
    -  CSS
    - JAVASCRIPT
+
+# Home Page 
+![image](https://user-images.githubusercontent.com/112810259/233782309-af735e48-fd0b-40ec-a145-6a1bb5a53396.png)
+
+# Footer
+![image](https://user-images.githubusercontent.com/112810259/233782334-84a99816-e07b-4e31-a522-d587b3f8e0d8.png)
+
+# Gifting Page
+![image](https://user-images.githubusercontent.com/112810259/233782355-42c8862b-cb55-41d9-b1c1-6cf1670d4575.png)
+
+# Product Page
+![image](https://user-images.githubusercontent.com/112810259/233782485-d8135fbe-ff88-41d9-b66d-649c48666d0f.png)
+
+# Payment Page
+![image](https://user-images.githubusercontent.com/112810259/233782557-5add26e8-e085-4e54-944e-172fd0750793.png)
